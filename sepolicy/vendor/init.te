@@ -10,3 +10,6 @@ allow init adsprpcd_file:filesystem { mount relabelfrom relabelto };
 
 # LEDs
 allow init sysfs_leds:lnk_file read;
+
+# USB HAL
+allow init vendor_file:file execute;
